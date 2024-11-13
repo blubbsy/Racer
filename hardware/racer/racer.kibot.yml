@@ -199,15 +199,15 @@ outputs:
         monochrome: true
         mirror: true
 
-  - name: "BOM for PCBWay"
-    comment: "BOM for PCBWay"
+  - name: "BOM"
+    comment: "BOM"
     type: bom
     dir: docs
     category: "purchasing"
     options:
       format: XLSX
       count_smd_tht: true
-      output: "BOM_PCBWay.%x"
+      output: "BOM.%x"
       ref_separator: ','
       columns:
         - field: Row
@@ -232,6 +232,7 @@ outputs:
         title: "%f BOM"
         hide_stats_info: false
         quote_all: true
+        logo: false
 
   - name: "ZIP Gerber"
     comment: "ZIP Gerber"
