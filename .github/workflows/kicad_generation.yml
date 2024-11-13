@@ -39,6 +39,10 @@ jobs:
 
       - name: Upload Results
         uses: actions/upload-artifact@v4
+        with:
+          path: |
+            production
+          if-no-files-found: ignore
 
     #  - if: ${{ matrix.NewImage && (github.event.pull_request.merged == true) }}
     #    name: Update image
