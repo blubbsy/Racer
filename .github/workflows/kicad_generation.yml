@@ -35,7 +35,7 @@ jobs:
       - name: Generate files
         run: |
           cd hardware/racer
-          kibot -d /production/racer
+          kibot -d ../production/racer
 
       - name: Upload Results
         uses: actions/upload-artifact@v4
